@@ -1,0 +1,17 @@
+import numpy as np
+
+try:
+    reps
+except NameError:
+    reps = 10000
+
+execfile('orelse_matchcat.py')
+
+date = '5.22.15'
+
+
+catfile1 = 'FINAL.onlykindafinal.cl0023.deimos.lris.feb2010.cat'
+catfile2 = 'Cl0023SAD_final.degs'
+outfile = 'Cl0023.opt_match.test.%s.dat'%date
+
+opt_radio_match(catfile1, catfile2, outfile)
